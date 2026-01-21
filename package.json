@@ -2,6 +2,9 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18 <=20"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -86,4 +89,5 @@
     "vite": "^5.4.19",
     "vitest": "^3.2.4"
   }
+  
 }
