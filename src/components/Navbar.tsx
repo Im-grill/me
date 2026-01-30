@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full max-w-screen-2xl mx-auto">
         {/* Logo */}
         <h1 className="text-xl font-bold text-primary tracking-tight">
-          Thorcon
+          <a href="/">Thorcon</a>
         </h1>
       </div>
     </header>
