@@ -165,20 +165,20 @@ const ProfileHeader = ({
                       }
                     }}
                   >
-                    <Share2 className="h-4 w-4" />
-                    Chia sẻ profile
+                    <Share2 className="h-4 w-4 mr-2" />
+                    Share profile
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={handleCopyLink}>
-                    <Link2 className="h-4 w-4" />
-                    Sao chép link
+                    <Link2 className="h-4 w-4 mr-2" />
+                    Copy link
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem
-                    onClick={() => toast.error("Đã gửi báo cáo")}
+                    onClick={() => toast.error("Report submitted")}
                     className="text-destructive focus:text-destructive"
                   >
-                    <Flag className="h-4 w-4" />
-                    Báo cáo
+                    <Flag className="h-4 w-4 mr-2" />
+                    Report
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>

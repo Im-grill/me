@@ -57,7 +57,7 @@ const posts: Post[] = [
   {
     id: "p1",
     author: { name: "Thorcon", avatarUrl: avatarImg },
-    createdAt: "2 giờ trước",
+    createdAt: "2 hours ago",
     body: "Hôm nay vibe anime đỉnh thật 🌸 — lướt Twitter thấy artwork của Luna làm mình mê cả ngày. Mọi người đang follow artist nào hay không?",
     likes: 24,
     comments: [
@@ -69,7 +69,7 @@ const posts: Post[] = [
   {
     id: "p2",
     author: { name: "Thorcon", avatarUrl: avatarImg },
-    createdAt: "1 ngày trước",
+    createdAt: "1 day ago",
     body: "Chán quá mí cậu có gì chơi không ?",
     likes: 7,
     comments: [

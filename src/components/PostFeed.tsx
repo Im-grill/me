@@ -169,8 +169,8 @@ const PostCard = ({ post }: { post: Post }) => {
               className="text-xs text-muted-foreground hover:text-foreground font-medium"
             >
               {showAll
-                ? "Thu gọn"
-                : `Xem thêm ${hiddenCount} bình luận`}
+                ? "Show less"
+                : `Show more ${hiddenCount} ${hiddenCount === 1 ? "comment" : "comments"}`}
             </button>
           )}
         </div>
