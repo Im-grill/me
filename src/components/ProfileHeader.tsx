@@ -113,9 +113,9 @@ const ProfileHeader = ({
           </div>
 
           {/* Info Card */}
-          <div className="flex-1 bg-card/90 backdrop-blur-sm rounded-xl p-4 shadow-soft flex items-center justify-between mb-2">
-            <div>
-              <div className="flex items-center gap-2">
+          <div className="flex-1 bg-card/90 backdrop-blur-sm rounded-xl p-4 shadow-soft flex flex-col md:flex-row items-start md:items-center justify-between gap-3 mb-2">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2">
                 <h2 className="text-xl md:text-2xl font-bold text-foreground">
                   {displayName}
                 </h2>
@@ -124,10 +124,10 @@ const ProfileHeader = ({
                 </span>
                 <span className="font-medium">♂</span>
               </div>
-              <p className="text-muted-foreground text-sm mt-0.5">@{username}</p>
+              <p className="text-muted-foreground text-sm mt-0.5 truncate">@{username}</p>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 self-end md:self-auto">
               <Button
                 onClick={toggleFollow}
                 className={`rounded-full px-6 transition-colors ${
