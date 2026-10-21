@@ -65,7 +65,7 @@ const ProfileHeader = ({
   const handleCopyLink = () => {
     if (!profileUrl) return;
     navigator.clipboard.writeText(profileUrl);
-    toast.success("Đã sao chép link profile!");
+    toast.success("Profile link copied!");
   };
 
   return (
