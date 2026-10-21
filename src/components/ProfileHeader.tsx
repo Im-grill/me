@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
@@ -99,6 +100,9 @@ const ProfileHeader = ({
               </DialogTrigger>
               <DialogContent className="max-w-3xl w-[90vw] bg-transparent border-none shadow-none p-0">
                 <DialogTitle className="sr-only">{displayName}</DialogTitle>
+                <DialogDescription className="sr-only">
+                  Phóng to ảnh đại diện
+                </DialogDescription>
                 <img
                   src={avatarUrl}
                   alt={displayName}

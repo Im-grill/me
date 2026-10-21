@@ -3,6 +3,7 @@ import { Heart, MessageCircle } from "lucide-react";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
@@ -116,6 +117,9 @@ const GalleryGrid = ({ items, poster }: GalleryGridProps) => {
           </DialogTrigger>
           <DialogContent className="max-w-4xl w-[95vw] p-0 overflow-hidden">
             <DialogTitle className="sr-only">Gallery image</DialogTitle>
+            <DialogDescription className="sr-only">
+              Xem ảnh và bình luận
+            </DialogDescription>
               <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] max-h-[85vh]">
               <div className="bg-black flex items-center justify-center min-h-[300px]">
                 <img
