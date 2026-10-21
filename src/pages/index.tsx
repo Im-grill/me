@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import ProfileHeader from "@/components/ProfileHeader";
@@ -83,7 +83,20 @@ const posts: Post[] = [
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState<"portfolio" | "post">("portfolio");
-  const [followers, setFollowers] = useState(205);
+  const [followers, setFollowers] = useState<number>(() => {
+    if (typeof window === "undefined") return 205;
+    return parseInt(
+      localStorage.getItem("followers:definitely_not_thor") || "205",
+      10
+    );
+  });
+
+  useEffect(() => {
+    localStorage.setItem(
+      "followers:definitely_not_thor",
+      String(followers)
+    );
+  }, [followers]);
 
   return (
     <div className="min-h-screen bg-background">
